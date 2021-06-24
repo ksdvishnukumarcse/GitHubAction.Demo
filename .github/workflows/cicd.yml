@@ -37,6 +37,6 @@ jobs:
         # Name of the Azure Web App
         app-name: '${{env.AZURE_WEB_APP}}'
         # Applies to Web Apps(Windows and Linux) and Web App Containers(linux). Multi container scenario not supported. Publish profile (*.publishsettings) file contents with Web Deploy secrets
-        publish-profile: '${{secret.AZURE_APP_PUBLISH_PROFILE}}'
+        publish-profile: '${{secrets.AZURE_APP_PUBLISH_PROFILE}}'
         # Applies to Web App only: Path to package or folder. *.zip, *.war, *.jar or a folder to deploy
         package: '${{env.PUBLISH_PATH}}/Publish'
